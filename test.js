@@ -38,6 +38,14 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     function markLinkAsVisited(link) {
       link.classList.add('visited');
+    const style = document.createElement('style');
+  style.textContent = `
+    .visited {
+      color: purple; /* Set your desired styles for visited links */
+      text-decoration: underline; /* Add any additional styles */
+    }
+  `;
+  document.head.appendChild(style);
     }
 
     async function tryGetOGImage(url) {
