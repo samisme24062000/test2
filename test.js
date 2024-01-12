@@ -1,5 +1,4 @@
-<script>
-  document.addEventListener('DOMContentLoaded', async function () {
+document.addEventListener('DOMContentLoaded', async function () {
     const links = document.querySelectorAll('a');
     const imageLoadedMap = new Map();
 
@@ -90,4 +89,3 @@
       });
     }
   });
-</script>
