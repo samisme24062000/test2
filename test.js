@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (imageUrl && await isImageUrl(imageUrl)) {
           return imageUrl;
         }
-        if (isImageUrl(url)) {
+        if (await isImageUrl(url)) {
           return url;
         }
         else {
