@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     async function tryGetOGImage(url) {
       try {
         const imageUrl = await getOGImage(url);
-        if (imageUrl && await isImageUrl(imageUrl)) {
+        if (imageUrl || await isImageUrl(imageUrl)) {
           return imageUrl;
         } else {
           return getOGImageFromJsAction(url);
